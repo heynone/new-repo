@@ -11,6 +11,6 @@ class PaginationHelper {
   }
 }
 
-const helper = new PaginationHelper(["a", "b", "c", "d", "e", "f"], 4);
-console.log(helper.pageCount());
-console.log(helper.itemCount());
+PaginationHelper.prototype.filterText = function filterText(arr) {
+  return arr.filter((item) => item > 5);
+};
