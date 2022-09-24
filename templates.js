@@ -14,7 +14,7 @@ class PaginationHelper {
 PaginationHelper.prototype.filterText = function filterText(arr) {
   return arr.filter((item) => item > 5);
 };
-
+// check for isChecked for pop-out
 const popOut = (isChecked) => {
   if (isChecked) {
     console.log("Show popUp");
