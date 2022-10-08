@@ -1,6 +1,8 @@
 //Selection Sort
 
 function selectionSort(arr) {
+  if (arr.length === 1 || arr.length === 0) return arr;
+
   for (let i = 0; i < arr.length; i++) {
     let minIdx = i;
     for (let j = i + 1; j < arr.length; j++) {
